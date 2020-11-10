@@ -1,0 +1,50 @@
+.rect{
+	width:100%;
+	height: 40px;
+	margin: 0 0;
+	background-color: #D26900;
+}
+.content {
+	width: 100%;
+	height: 560px;
+	position: relative;
+}
+.daohang{
+	width:100px;
+	height: 560px;
+	background-color:#faa755;
+	float: left;
+}
+ul li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0px auto;
+}
+
+.menuitem {
+	width: 100px;
+	height: 60px;
+	margin: 0px 0px;
+	text-align: center;
+	line-height: 60px;
+}
+
+.menuitem:last-child:after {
+	clear: both;
+}
+
+.selectedli {
+	background-color: #f1770e;
+}
+.frame{
+	float: left;
+	height: 560px;
+}
+.myFrame {
+	width: 100%;
+	height: 560px;
+}

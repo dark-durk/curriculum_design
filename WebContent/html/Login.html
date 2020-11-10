@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript"
+	src="/curriculum_design/js/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="/curriculum_design/css/content.css" type="text/css">
+<link rel="stylesheet" href="/curriculum_design/css/topAndBottom.css" type="text/css">
+</head>
+<body>
+	<div class="head">
+		<div class="logo">
+			<img src="https://s2.ax1x.com/2019/12/09/QwfjHS.jpg" alt="">
+		</div>
+		<div class="title">出租车信息平台</div>
+		<div class="search">
+			<form action="">
+				<input type="text" id="search_text" name="search_text"
+					placeholder="输入司机工号"> <input type="submit" id="search"
+					name="search" value="查询">
+			</form>
+		</div>
+	</div>
+	<div class="content">
+		<div class="pageName">
+			<span class="srec" style="margin-left: 0px"></span> 登陆
+		</div>
+		<div class="pageContent">
+			<div class="formContent">
+				<p class="pageNameFont">使用注册邮箱登陆</p>
+				<!-- 登陆表单开始 -->
+				<form action="/curriculum_design/LoginServlet" method="post"
+					onsubmit="return validate();">
+					<div style="margin-left: 100px; margin-top: 20px;">
+						<p>
+							选择身份&nbsp;&nbsp;<input type="radio" id="identity1"
+								name="identity" value="用户" checked>用户 <input
+								type="radio" id="identity2" name="identity" value="司机">司机
+						</p>
+						<br>
+						<p>
+							邮箱：<input type="text" name="theId" id="theId">
+						</p>
+						<br>
+						<p>
+							密码：<input type="password" name="password" id="password">
+						</p>
+						<br>
+						<p>
+							<input class="button_text" type="submit" name="submit" value="登陆">
+						</p>
+						<br>
+					</div>
+					<a href="http://localhost:9527/curriculum_design/jsp/Register.jsp"
+						style="font-size: 10px;">还没有账号？点击快速注册</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		Copyright © 2019 出租车协会 版权所有&nbsp;&nbsp;邮编：6100400&nbsp;&nbsp; 技术支持：<a
+			href="#" target="_blank">憨憨信息技术有限公司</a>
+		<p>
+			<a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank">蜀ICP备05000152号-1</a><br>
+		</p>
+	</div>
+	<script type="text/javascript">
+		function validate() {
+			var theId = document.getElementById("theId");
+			var password = document.getElementById("password");
+			if (theId.value == "") {
+				alert("邮箱不能为空");
+				theId.focus();
+				return false;
+			}
+			if (password.value == "") {
+				alert("密码不能为空");
+				password.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>

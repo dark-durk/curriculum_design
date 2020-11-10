@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.head {
+	width: 100%;
+	height: 100px;
+}
+
+.head .logo {
+	float: left;
+	margin-left: 30px;
+}
+
+.head img {
+	width: 100px;
+	height: 100px;
+	/* transform: scale(0.5); */
+}
+
+.head .title {
+	height: 100px;
+	font-size: 50px;
+	font-style: italic;
+	line-height: 100px;
+	/* color: red; */
+	float: left;
+	text-shadow: 1px 1px 5px;
+	margin: 0px 30px;
+}
+
+.head .search {
+	float: right;
+	margin-right: 30px;
+	margin-top: 60px;
+}
+
+.head input {
+	height: 30px;
+	border-radius: 10px;
+}
+
+.bottom {
+	width: 100%;
+	height: 50px;
+	background-color: #d26900;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: 25px;
+	padding-top: 20px;
+	margin: 0px 0px;
+	margin-bottom: 0px;
+}
